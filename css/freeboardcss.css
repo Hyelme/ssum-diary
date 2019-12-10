@@ -1,0 +1,210 @@
+	
+	
+	.wrap_tbl .btn_area {
+		margin : 14px 0 0;
+	}
+
+	.btn_area.right {
+		text-align : right;
+	}
+	
+	.btn_area a:first-child {
+		margin : 0;
+	}
+	
+	.btns.board {
+		line-height : 36px;
+		width : 100px;
+		height : 38px;
+		color : #ffffff;
+		border : 0;
+		background : #797d84;
+	}
+
+	.btn_area {
+		position : relative;
+		width : 100%;
+		text-align : center;
+	}
+
+	.btn_area a {
+		margin : 0 0 0 6px;
+	}
+
+	.btns.board, .btns.board_gray {
+		font-weight : 700;
+		width : 98px;
+		color : #2a2a2a;
+		border : 1px solid #ddd;
+	}
+
+	.btns {
+		font-weight : 700;
+		line-height : 34px;
+		display : inline-block;
+		height : 36px;
+		-webkit-transition : all .2s cubic-bezier(.39, .575, .565, 1);
+		transition : all .2s cubic-bezier(.39, .575, .565, 1);
+		text-align : center;
+		color : #2a2a2a;
+		border : 1px solid #ddd;
+	}
+
+	.ico_writing {
+		width : 14px;
+		height : 17px;
+		vertical-align : -3px;
+		background-position : -100px 0;
+		display : inline-block;
+		margin-right : 4px;
+		background-image : url(/images/ico_change.png);
+		background-repeat : no-repeat;
+	}
+
+	.tb_info .no {
+		color : #5d6064;
+	}
+
+	.tb_info .title{
+		padding-left : 20px;
+	}
+
+	.tb_info .title, .tb_info .title a {
+		font-size : 16px;
+		text-align : left;
+		letter-spacing : -1px;
+		color : #1b2637;
+	}
+
+	.tb_info .title a {
+		overflow : hidden;
+		white-space : nowrap;
+		text-overflow : ellipsis;
+		-o-text-overflow : ellipsis;
+		-moz-binding : url(ellipsis.xml#ellipsis);
+	}
+
+	.tb_info .ico_wrap, .tb_info .title a {
+		display : inline-block;
+		overflow : hidden;
+		vertical-align : -5px;
+	}
+
+	a, a:active, a:focus, a:hover, a:link, a:visited {
+		font-size : 100%;
+		text-decoration : none;
+		color : #5d6064;
+	}
+	
+	.tb_info thead th:first-child {
+		border-left : none;
+	}
+
+	.td_info th.writer {
+		text-align : center;
+	}
+
+	.tb_info tbody th, .tb_info thead th{
+		font-size : 14px;
+		font-weight : 700;
+	}
+
+	.tb_info thead th {
+		height : 51px;
+		padding : 0;
+		border-top : 0;
+		border-bottom : 1px solid #d0d0d0;
+		color : #1b2637;
+	}
+
+	.tb_info td, .tb_info th {
+		height : 20px;
+		padding : 15px 0;
+		text-align : center;
+		color : #797d84;
+		border-bottom : 1px solid #eaeaea;
+	}
+
+	.tb_info {
+		border-top : 2px solid #555;
+	}
+
+	.wrap_tbl table {
+		width : 100%;
+		table-layout : fixed;
+	}
+
+	article, aside, body, div, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, input, li, menu, nav, ol, p, pre, section, summary, td, textarea, th, time, ul {
+		margin : 0px;
+		padding : 0px;
+	}
+
+	.none_contents {
+		font-size : 14px;
+		font-weight : 700;
+		font-style : normal;
+		text-decoration : none;
+		text-align : center;
+	}
+
+	.paging {
+		margin : 10px 0 0;
+		text-align : center;
+	}
+
+	.paging ul {
+		display : inline-block;
+	}
+
+	.clfix::after {
+		clear : both;
+	}
+
+	.clfix::after, .clfix::before {
+		line-height : 0;
+		display : table;
+		content : "";
+	}
+
+	.clfix {
+		*zoom:1: ;
+	}
+
+	ol ul {
+		list-style : none;
+	}
+
+	address, caption, dfn, em, strong, th, var {
+		font-weight : 400;
+		font-style : normal;
+	}
+
+	caption, hr, legend {
+		font-size : 1px;
+		line-height : 0;
+		width : 0px;
+		height : 0px;
+		text-indent : -9999em;
+	}
+
+	caption, th {
+		text-align : left;
+	}
+	table {
+		border-spacing : 0;
+		border-collapse : collapse;
+	}
+
+	body{
+		font-family :'¸¼Àº°íµñ','Malgun Gothic','Apple SD Gothic Neo',arial,'µ¸¿ò',Dotum,Tahoma,Geneva,sans-serif;
+		font-size : 14px;
+		line-height : 20px;
+		letter-spacing : -0.8px;
+		color : #5d6064;
+	}
+
+	html {
+		font-size : 100%;
+		color : #000;
+			-webkit-text-size-adjust : 100%;
+	}

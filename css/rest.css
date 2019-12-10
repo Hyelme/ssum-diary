@@ -1,0 +1,60 @@
+@charset 'utf-8';
+/*! reset */
+html{font-size:100%;color:#000;background:#fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+article,aside,audio,blockquote,body,canvas,code,dd,details,div,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,input,legend,li,mark,menu,nav,ol,p,pre,section,summary,td,textarea,th,time,ul,video{margin:0;padding:0}
+body{font-family:'¸¼Àº°íµñ','Malgun Gothic','Apple SD Gothic Neo',arial,'µ¸¿ò',Dotum,Tahoma,Geneva,sans-serif;font-size:14px;line-height:20px;letter-spacing:-.8px;color:#5d6064;background-color:#fff}
+img{vertical-align:middle;border:0}
+button,input,select,textarea{font-size:100%;margin:0;vertical-align:middle}
+table{border-spacing:0;border-collapse:collapse}
+fieldset{border:0}
+legend{color:#000}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:400;font-style:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:400;line-height:1}
+caption,hr,legend{font-size:1px;line-height:0;width:0;height:0;text-indent:-9999em}
+a,a:active,a:focus,a:hover,a:link,a:visited{font-size:100%;text-decoration:none;color:#5d6064}
+/*! mac css */
+.mac_os .tab_basic li{margin-left:-4px}
+.mac_os .tab_basic li a{padding:8px 18px 6px}
+.mac_os .tab_comm{background:0 0}
+.mac_os .tab_comm li a:after{position:absolute;display:block;width:100%;height:1px;content:'';background:#000}
+.mac_os .tab_comm li.on a:after{background:#fff}
+.mac_os .tab_comm li.on a{border:1px solid #000;background:0 0}
+.mac_os .tab_comm li a{line-height:43px;border-color:#ddd}
+.mac_os a.btn_more{line-height:46px}
+.mac_os .ico_rank.r15{line-height:16px}
+.mac_os .ico_rank.r19,.mac_os .ico_subtitle{line-height:24px}
+.mac_os a.btns_ico{line-height:34px}
+.mac_os .bl_gray_dot li{background-position:left 7px}
+.mac_os .section_list_wrap .r_section h3 span{background-position:left top}
+.mac_os .ico_status em{padding:5px 10px 3px}
+.mac_os #footer .f_content{padding:21px 0 20px}
+.mac_os #content .lnb_area .lnb>li>a{padding:17px 0}
+.mac_os #content .lnb_2depth>li.on_2depth>a,.mac_os #content .lnb_2depth>li>a:hover{color:#ff3091;background:url(/images/common/bl_lnb_pink.gif) left 7px no-repeat}
+.mac_os .tab_relation .rolling_relation li a{line-height:34px}
+.mac_os .util li a{line-height:28px}
+.mac_os .location_map>li>a,.mac_os .location_map>li>span{line-height:18px}
+.mac_os .paging ul li a,.mac_os .paging ul li strong{line-height:26px;min-width:8px}
+/*! °Ô½ÃÆÇ */
+.mac_os a.btn_file_save.big{line-height:38px}
+.mac_os .tb_view .filesave_wrap .filesave_list li{background-position:left 3px}
+.mac_os a.btn_sns02{line-height:38px}
+.mac_os .bx_photo_wrap .rolling_photo li a .img .photo_num .ico_photo,.mac_os .photo_gallerylist li a .img .photo_num .ico_photo{vertical-align:-2px}
+.mac_os .tb_info .ico_wrap,.mac_os .tb_info .title a,.mac_os .tb_info .title02 a{vertical-align:-8px}
+/*! ÅëÇÕ°Ë»ö */
+.mac_os .wrap_sch .btn_sch{line-height:45px}
+.mac_os .wrap_quick_event .txt_exp{height:42px}
+.mac_os .box_prg .tb_info_type .box_ellipsis{height:22px}
+.mac_os .sch_replay_list .date{background-position:right 2px}
+.mac_os .news_list .date{background-position:left 2px}
+.mac_os .box_prg .tb_info_type .open_box{top:25px}
+/*! ÇªÅÍ */
+.mac_os .jtbc_brand_type .song_tit .t{background-position:left 2px}
+.mac_os .help_list .btn_link{line-height:22px}
+/*! ´ñ±Û */
+.mac_os .comment_log .btn_c_recommand,.mac_os .comment_log .btn_c_report{line-height:29px}
+.mac_os .comment_log .btn_c_recommand .ico,.mac_os .comment_log .btn_c_report .ico{background-position:left 2px}
+.mac_os .comment_btn .btn_write_reply{line-height:23px}
+.mac_os .comment_desc .in_mov .thumb .txt .tit{height:45px}
+.mac_os .comment_list>li{padding:18px 0 17px}

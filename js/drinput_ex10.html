@@ -1,0 +1,122 @@
+<html> 
+<head> 
+<title> sjisbmoc </title> 
+<script type='text/javascript'> 
+	function getObj(obj,tgt) 
+	{ 
+		while(obj.tagName!=tgt) obj = obj.parentNode; 
+		return obj; 
+	} 
+
+	function addRow(obj) 
+	{ 
+		var addForm = new Array('A','B','C','<button type=\'button\' onclick="addRow(this);">&nbsp;+&nbsp;</button><button type="button" onclick="delRow(this);">&nbsp;-&nbsp;</button>'); 
+		var tbd = getObj(obj,'TBODY'); 
+		var tr  = document.createElement('TR'); 
+		tbd.appendChild(tr); 
+
+		for(var i=0;i<4;i++) 
+		{ 
+			var td  = document.createElement('TD'); 
+			td.innerHTML = addForm[i]; 
+			tr.appendChild(td); 
+		} 
+
+		var ftr = getObj(obj,'TR'); 
+		var from; 
+		var to; 
+		var pos = 0; 
+		
+		for(var i=0; i<tbd.childNodes.length; i++) 
+		{ 
+			if(tbd.childNodes[i].nodeName=='TR') 
+			{ 
+				if(tbd.childNodes[i]==ftr) from = pos+1; 
+				if(tbd.childNodes[i]==tr) to = pos; 
+				pos++; 
+			} 
+		} 
+		moveRow(tbd, from, to); 
+	} 
+
+	function moveRow(tbody, from, to) 
+	{ 
+		if(from!=to) 
+		{ 
+			var pos = to; 
+			for(var j=tbody.childNodes.length-1; j>0; j--) 
+			{ 
+				if(from==j) break; 
+				if(tbody.childNodes[j].nodeName=='TR') 
+				{ 
+					var ftr  = tbody.childNodes[j]; 
+					var ttr  = tbody.childNodes[j-1]; 
+					for(var k=0; k<ftr.childNodes.length; k++) 
+					{ 
+						if(ftr.childNodes[k].nodeName=='TD') 
+						{ 
+							var ftd = ftr.childNodes[k]; 
+							var ttd = ttr.childNodes[k]; 
+							var tmp = ttd.innerHTML; 
+							ttd.innerHTML = ftd.innerHTML; 
+							ftd.innerHTML = tmp; 
+						} 
+					} 
+				} 
+			} 
+		} 
+	} 
+
+	function delRow(obj) 
+	{ 
+		var dtr = getObj(obj,'TR'); 
+		dtr.parentNode.removeChild(dtr); 
+	} 
+</script> 
+</head> 
+<body> 
+	<table id='test' border='2px' width='400px'> 
+		<tr>
+			<td>A1</td>
+			<td>A2</td>
+			<td>A3</td>
+			<td><button type='button' onclick="addRow(this);">&nbsp;+&nbsp;</button>
+				<button type='button' onclick="delRow(this);">&nbsp;-&nbsp;</button>
+			</td>
+		</tr> 
+		<tr>
+			<td>B1</td>
+			<td>B2</td>
+			<td>B3</td>
+			<td><button type='button' onclick="addRow(this);">&nbsp;+&nbsp;</button>
+				<button type='button' onclick="delRow(this);">&nbsp;-&nbsp;</button>
+			</td>
+		</tr> 
+		<tr>
+			<td>C1</td>
+			<td>C2</td>
+			<td>C3</td>
+			<td><button type='button' onclick="addRow(this);">&nbsp;+&nbsp;</button>
+				<button type='button' onclick="delRow(this);">&nbsp;-&nbsp;</button>
+			</td>
+		</tr> 
+		<tr>
+			<td>D1</td>
+			<td>D2</td>
+			<td>D3</td>
+			<td><button type='button' onclick="addRow(this);">&nbsp;+&nbsp;</button>
+				<button type='button' onclick="delRow(this);">&nbsp;-&nbsp;</button>
+			</td>
+		</tr> 
+		<tr>
+			<td>E1</td>
+			<td>E2</td>
+			<td>E3</td>
+			<td><button type='button' onclick="addRow(this);">&nbsp;+&nbsp;</button>
+				<button type='button' onclick="delRow(this);">&nbsp;-&nbsp;</button>
+			</td>
+		</tr> 
+	</table> 
+</body> 
+</html> 
+

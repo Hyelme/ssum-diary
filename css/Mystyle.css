@@ -1,0 +1,301 @@
+	@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Nanum+Brush+Script|Nanum+Pen+Script|Stylish&subset=korean');
+
+	
+	A:link { text-decoration:none; }
+	A:visited { text-decoration:none; }
+	A:active {text-decoration:none; }
+
+	#container ul li {            
+        color: white;               
+        background-color: #4591CE;
+}
+
+	#loginbtn {
+		text-decoration:none;
+		list-style-type: none;  
+		float : right;
+		font-size : 10pt;
+		text-align: center;
+		vertical-align : middle;
+        position: relative;
+		margin-right : 15px;
+		margin-top : 15px;
+	}
+	#singUpbtn {
+		text-decoration:none;
+		list-style-type: none;  
+		float : right; 
+		font-size : 10pt;
+		text-align: center;
+		vertical-align : middle;
+        position: relative;
+		margin-right : 10px;
+		margin-top : 15px;
+	}
+
+	#userInfo {
+		text-decoration:none;
+		list-style-type: none;  
+		float : right; 
+		font-size : 10pt;
+		text-align: center;
+		vertical-align : middle;
+        position: relative;
+		margin-right : 15px;
+		margin-top : 15px;
+	}
+	#logoutbtn {
+		text-decoration:none;
+		list-style-type: none;  
+		float : right; 
+		font-size : 10pt;
+		text-align: center;
+		vertical-align : middle;
+        position: relative;
+		margin-right : 10px;
+		margin-top : 15px;
+	}
+
+	.bestDtitle {
+		margin-left:90px;
+		margin-top:30px;
+		font-family:'Nanum Pen Script', '¸¼Àº °íµñ', 'Malgun Gothic', 'Apple Gothic',dotum,gulim,sans-serif;
+		font-weight:bold;
+		font-size:50px;
+	}
+
+	.mainnttitle {
+		margin-left:10px;
+		margin-top:40px;
+		font-family:'Nanum Pen Script', '¸¼Àº °íµñ', 'Malgun Gothic', 'Apple Gothic',dotum,gulim,sans-serif;
+		font-weight:bold;
+		font-size:50px;
+	}
+
+	.mainntadd {
+		margin-left:370px;
+		margin-top:40px;
+		font-family:'Nanum Pen Script', '¸¼Àº °íµñ', 'Malgun Gothic', 'Apple Gothic',dotum,gulim,sans-serif;
+		font-size:25px;
+		color: #828282;
+	}
+
+	.mainfbtitle {
+		margin-left:105px;
+		margin-top:40px;
+		font-family:'Nanum Pen Script', '¸¼Àº °íµñ', 'Malgun Gothic', 'Apple Gothic',dotum,gulim,sans-serif;
+		font-weight:bold;
+		font-size:50px;
+	}
+
+	.mainfbadd {
+		margin-left:340px;
+		margin-top:40px;
+		font-family:'Nanum Pen Script', '¸¼Àº °íµñ', 'Malgun Gothic', 'Apple Gothic',dotum,gulim,sans-serif;
+		font-size:25px;
+		color: #828282;
+	}
+
+	.container2 {
+		margin-top:40px;
+	}
+
+
+/*login*/
+	#logopage img {
+		margin-top : 8em;
+		margin-left: auto; 
+		margin-right: auto; 
+		display: block;
+	}
+
+	#wrap {
+		margin-top : 4em;
+		margin-left: auto; 
+		margin-right: auto; 
+	}
+
+	input[type="submit"]:not(.btns) {
+
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		border: 0;
+		color: #ffffff !important;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 1.9em;
+		font-weight: 900;
+		height: 50px;
+		width: 503.5px;
+		letter-spacing: 1em;
+		overflow: hidden;
+		padding: 0 1.25em 0 1.6em;
+		margin-top:0.5em;
+		text-align: center;
+		text-decoration: none;
+		text-overflow: ellipsis;
+		text-transform: uppercase;
+		white-space: nowrap;					
+		background-color:#95999c;
+	}
+
+	#join_end input[type="button"] {
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		border: 0;
+		color: #ffffff !important;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 1.3em;
+		font-weight: 900;
+		height: 50px;
+		width: 200px;
+		letter-spacing: 0.5em;
+		overflow: hidden;
+		padding: 0 1.25em 0 1.6em;
+		margin-top:0.5em;
+		text-align: center;
+		text-decoration: none;
+		text-overflow: ellipsis;
+		text-transform: uppercase;
+		white-space: nowrap;					
+		background-color:#95999c;
+	}
+
+	#agree{
+		background-color: #AAABAB !important;
+	}
+
+	#disagree{
+
+		background-color: #676767 !important;
+	}
+
+
+	#wrap input[type="text"],
+	#wrap input[type="password"],
+	#wrap input[type="submit"] {
+		margin-right:auto;
+		margin-left:auto;
+		display:block;
+	}
+
+	#other_bt {
+		text-align:center;
+		margin-top:1em;
+	}
+
+
+/*join*/
+	#join_start, #join_content, #join_end {
+		text-align:center;
+		margin-right:auto;
+		margin-left:auto;
+		display:block;
+		margin-top:1.5em;
+	}
+
+		#join_content textarea {
+			font-family:Tahoma;
+			margin-bottom:1.5em;
+		}
+
+		#agree_bt {
+			margin-top:1em;
+		}
+	
+	#join_end {
+		margin-bottom:5em;
+	}
+
+
+		#join_end img {
+			width:160px;
+		}
+
+
+/*join2*/
+	#joinForm {
+		margin-left:auto;
+		margin-right:auto;
+		display:table;
+	}
+
+	#joinForm b {
+		text-align:center;
+		display:block;
+		margin:2em;
+	}
+
+	#addr1, #addr2 {
+		margin-top : 4px;
+	}
+
+	#joinForm input[type="text"],
+	#joinForm input[type="password"] {
+		margin-bottom:0.3em;
+	}
+
+	.joinbt {
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		border: 0;
+		color: #ffffff !important;
+		cursor: pointer;
+		display: inline-block;
+		overflow: hidden;
+		font-weight:700;
+		text-align: center;
+		text-decoration: none;
+		text-overflow: ellipsis;
+		text-transform: uppercase;
+		white-space: nowrap;
+		background-color: #AAAB;
+		font-size: 0.91em;
+		height: 50px;
+		width: 150px;
+		letter-spacing: 0.3em;
+	}
+
+	#joinFbt {
+		width:510.5px;
+		margin-bottom:5em;
+	}
+
+
+/*ID/PW*/
+
+#findidpwForm {
+	margin-left:auto;
+	margin-right:auto;
+	display:table;
+	margin-bottom:5em;
+}
+
+	#findidpwForm input[type="submit"] {
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		border: 0;
+		color: #ffffff !important;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 1.3em;
+		font-weight: 900;
+		height: 50px;
+		width: 200px;
+		letter-spacing: 0.5em;
+		overflow: hidden;
+		padding: 0 1.25em 0 1.6em;
+		margin-top:0.5em;
+		text-align: center;
+		text-decoration: none;
+		text-overflow: ellipsis;
+		text-transform: uppercase;
+		white-space: nowrap;					
+		background-color:#95999c;
+		margin-left:auto;
+		margin-right:auto;
+		display:block;
+	}
+
+	#findidpwForm b {
+		text-align:center;
+		display:block;
+		margin:2em 0 1em 0;
+	}

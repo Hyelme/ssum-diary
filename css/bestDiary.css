@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Nanum+Brush+Script|Nanum+Pen+Script|Stylish&subset=korean');
+
+body {
+	background-color:#F3F3F3;
+}
+
+.Dmain_title {
+	font-family : 'Black Han Sans', '맑은 고딕', 'Malgun Gothic', 'Apple Gothic',dotum,gulim,sans-serif;
+	font-weight : 900;
+	font-size : 25px;
+}
+
+.Diary_cover {
+	width : 200px; 
+	height : 200px;
+    border : 0 solid;
+	margin-left : 77px;
+	margin-right : 10px; 
+	margin-top : 15px;
+    border-radius : 10px;
+	float : left;
+	font-family : '맑은 고딕', 'Malgun Gothic', 'Apple Gothic',dotum,gulim,sans-serif;
+	color : #ffffff;
+}
+
+.Diary_cover_right {
+	width : 60px;
+	height : 40px;
+	border : 4px solid #ffffff;
+	float : left;
+	border-radius : 10px;
+	margin-left: 150px;
+	margin-top : 5px;
+}
+
+.Diary_cover_right_dot {
+	background-color : #ffffff;
+	width : 15px;
+	height : 15px;
+	border : 0;
+	border-radius: 50%;
+	float : left;
+	margin-left: 10px;
+	margin-top : 13px;
+
+}
+
+.Diary_cover img {
+	height : 70px;
+	width : 180px;
+	margin-top : 7px;
+	border : 0 solid #ffffff;
+}
+
+.addButton {
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 45px;
+  background: #797d84;
+  padding: 5px 17px 5px 17px;
+  border: solid #797d84 0px;
+  text-decoration: none;
+}
+
+.hiddenBtn {
+	float:right;
+}
+
+.addButton:hover {
+  background: #61646a;
+  text-decoration: none;
+}
+
+.subBtn {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: 'Nanum Pen Script', sans-serif;
+  color: #ffffff;
+  font-size: 25px;
+  background: #5d96ba;
+  padding: 14px 24px 14px 24px;
+  text-decoration: none;
+  float:left;
+}
+
+.subBtn:hover {
+  background: #385a70;
+  text-decoration: none;
+}
+
+.Dmain_addDiary {
+	float : right;
+	position : absolute;
+	right : 0;
+	bottom : 0;
+	margin-right : 20px;
+	margin-bottom : 200px;
+}
+
+.none_diary {
+	font-family : 'Do Hyeon', '맑은 고딕', 'Malgun Gothic', 'Apple Gothic',dotum,gulim,sans-serif;
+	font-size : 20px;
+	color : #807a7f;
+	text-align : center;
+	margin-top : 180px;
+	
+}
+
+.dcinput_wrap {
+	border-top : 2px solid #555;
+}
+
+.addRoute {
+	margin-top : 15px;
+}
+
+.addRouteInput {
+	width : 180px;
+	height : 35px;
+}
+
+.drAddButton {
+	background-color: #4591ce;
+	margin-right : 5px;
+	border-radius: 50%;
+	width: 20px; 
+	height: 20px;
+	border: 0;
+	text-align:center;
+	font-weight : 900;
+	font-size:15px;
+	color : #ffffff;
+	text-decoration:none;
+}
+
+.drAddButton2 {
+	background-color: #4591ce;
+	margin-right : 5px;
+	margin-top : 15px;
+	border-radius: 50%;
+	width: 20px; 
+	height: 20px;
+	border: 0;
+	text-align:center;
+	font-weight : 900;
+	font-size:15px;
+	color : #ffffff;
+	text-decoration:none;
+}
+
+.drSubtButton {
+    
+	background-color: #aaaaaa;
+	border-radius: 50%;
+	width: 20px; 
+	height: 20px;
+	border: 0;
+	text-align:center;
+	font-weight : 900;
+	font-size:15px;
+	color : #ffffff;
+	text-decoration:none;
+}
+
+.indate{
+	margin-right: 15px;
+}
+
+#datepicker {
+	border:none;
+}
+
+.datepick img{
+	float:left;
+	width:23px;
+	margin-top:8px;
+	margin-right:5px;
+}
+
+.datepick input {
+	float:left;
+	height:25px;
+	margin-top:10px;
+	font-size:18px; 
+	font-weight:400;
+}
+		
+#dday {
+	border:none;
+	float:right;
+	font-size:20px; 
+	width: 80px; 
+	height:30px;
+}
+
+.dcinput_wrap {
+	height:500px;
+}
+
+.route_area {
+	margin-top:10px;
+}
+A:link { text-decoration:none; }
+A:visited { text-decoration:none; }
+A:active {text-decoration:none; }
+a,div { text-decoration:none; }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>여행을 담다, 쑴 일기 회원가입</title>
+	<link href="css/Mystyle.css" rel="stylesheet">
+	<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+	<script language='Javascript'> 
+		function id_check() {
+			var id = document.comma.uid.value;
+			if (id.length < 5) {
+				window.alert('ID는 5글자 이상 입력해주세요');
+			} else {
+				window.open('id_check.php?id='+id, 'IDCHECK', 'width=450, height=180, scrollbars=yes');
+			}
+		} 
+
+		function sample6_execDaumPostcode() {
+			new daum.Postcode({
+				oncomplete: function(data) {
+					// 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+					// 각 주소의 노출 규칙에 따라 주소를 조합한다.
+					// 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+					var fullAddr = ''; // 최종 주소 변수
+					var extraAddr = ''; // 조합형 주소 변수
+
+					// 사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+					if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+						fullAddr = data.roadAddress;
+
+					} else { // 사용자가 지번 주소를 선택했을 경우(J)
+						fullAddr = data.jibunAddress;
+					}
+
+					// 사용자가 선택한 주소가 도로명 타입일때 조합한다.
+					if(data.userSelectedType === 'R'){
+						//법정동명이 있을 경우 추가한다.
+						if(data.bname !== ''){
+							extraAddr += data.bname;
+						}
+						// 건물명이 있을 경우 추가한다.
+						if(data.buildingName !== ''){
+							extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+						}
+						// 조합형주소의 유무에 따라 양쪽에 괄호를 추가하여 최종 주소를 만든다.
+						fullAddr += (extraAddr !== '' ? ' ('+ extraAddr +')' : '');
+					}
+
+					// 우편번호와 주소 정보를 해당 필드에 넣는다.
+					document.getElementById('zipcode').value = data.zonecode; //5자리 새우편번호 사용
+					document.getElementById('addr1').value = fullAddr;
+
+					// 커서를 상세주소 필드로 이동한다.
+					document.getElementById('addr2').focus();
+				}
+			}).open();
+		}
+	</script>
+  </head>
+  <body>
+	<div id="logopage">
+		<a href = Fmain.html>
+			<img alt='logo' src='images/ssum_logo2.png'>
+		</a>
+	</div>
+	<div id="joinForm">
+		<b>[회원 가입 폼]</b>
+		<form action=register.php method=post name=comma>
+			<input type=text size=70 name=uid placeholder="아이디" style="height:50px; width:350px;">
+			<input type="button" value="ID 중복검사" class="joinbt" onclick="javascript:id_check()"><br>
+			<input type=password maxlength=15 size=70 name=upass1 placeholder="비밀번호" style="height:50px; width:505px;"><br>
+			<input type=password maxlength=15 size=70 name=upass2 placeholder="비밀번호 확인" style="height:50px; width:505px;"><br>
+			<input type=text size=70 name=uname placeholder="이름" style="height:50px; width:505px;"><br>
+			<input type=text size=70 name=mphone placeholder="전화번호" style="height:50px; width:505px;"><br>
+			<input type=text size=30 name=email placeholder="이메일" style="height:50px; width:505px;"><br>
+			<input type="text" name=zipcode id="zipcode" placeholder="우편번호" style="height:50px; width:349px;" readonly = readonly>
+			<input type="button" value="우편번호검색" class="joinbt" onclick="javascript:sample6_execDaumPostcode()"><br>
+			<input type="text" name=addr1 id="addr1" placeholder="주소" style="height:50px; width:330px;">
+			<input type="text" name=addr2 id="addr2" placeholder="상세주소" style="height:50px; width:166px;"><br>
+		  
+			<input type=submit value="가입하기" id="joinFbt">
+
+		</form>
+	</div>
+  </body>
+</html>
