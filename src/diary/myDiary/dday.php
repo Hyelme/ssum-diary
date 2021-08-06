@@ -1,4 +1,4 @@
-<? /*$sdate = 다이어리에서 선택한 날짜, $tdate1 = 여행 시작 날짜*/
+<?
 function d_day($sdate) { 
 $now = time($tdate1); 
 $dday = mktime(0,0,0,$sdate); 

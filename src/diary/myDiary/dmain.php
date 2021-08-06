@@ -1,5 +1,5 @@
 <meta charset="UTF-8">
-<? include ("top.html"); ?>
+<? include ("../../main/top.html"); ?>
 <table border='0' width='95%' align='center'>
 <tr height='70'></tr>
 <tr height='600'>
@@ -26,10 +26,10 @@ mysql_query("update diarycover set hit=$hit where writer='$UserName' and dname='
 echo("
 <HTML html>
 <head>
-<link href='css/common.css' rel='stylesheet'>
-<link href='css/rest.css' rel='stylesheet'>
-<link href='css/Diary.css' rel='stylesheet'>
-<script src='js/hiddenBtn.js'></script>
+<link href='../../css/common.css' rel='stylesheet'>
+<link href='../../css/rest.css' rel='stylesheet'>
+<link href='../../css/Diary.css' rel='stylesheet'>
+<script src='../../js/hiddenBtn.js'></script>
 </head>
 <body>
 	<div class='content_tit_area clfix first_child no_line'>
@@ -42,8 +42,8 @@ echo("
 		echo $country2;
   echo(" ]</h4>
 	<div class='btn_area justify'>
-		<a class='btns board_white' href='dcpass.php?dname=$dname&mode=0'>커버 수정</a>
-		<a class='btns board_white' href='dcpass.php?dname=$dname&mode=1'>Diary 삭제</a>
+		<a class='btns board_white' href='./diaryCover/dcpass.php?dname=$dname&mode=0'>커버 수정</a>
+		<a class='btns board_white' href='./diaryCover/dcpass.php?dname=$dname&mode=1'>Diary 삭제</a>
 		<a id='writing' class='btns board gray' href='dcmain.php'>
 		뒤로가기</a>
 	</div>
@@ -112,9 +112,9 @@ echo("</font></th>
 			<tr>
 				<td>
 				<div id='hiddenTB' style='display:none'>
-					<a href='drinput2.php?dname=$dname'><input class='subBtn' type='button' value='경로'></a>
-					<a href='dwinput.php?dname=$dname'><input class='subBtn' type='button' value='글'></a>
-					<a href='dpinput.php?dname=$dname'><input class='subBtn' type='button' value='사진'></a>
+					<a href='./routeContent/drinput2.php?dname=$dname'><input class='subBtn' type='button' value='경로'></a>
+					<a href='./writeContent/dwinput.php?dname=$dname'><input class='subBtn' type='button' value='글'></a>
+					<a href='./imageContent/dpinput.php?dname=$dname'><input class='subBtn' type='button' value='사진'></a>
 				</div>
 				</td>
 				<td>
@@ -128,4 +128,4 @@ echo("</font></th>
 ?>
 </td></tr>
 </table>
-<? include ("bottom.html");?>
+<? include ("../../main/bottom.html");?>

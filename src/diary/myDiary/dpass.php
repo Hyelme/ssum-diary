@@ -21,17 +21,17 @@ if ($writer != $UserName) {
 } else {                  // 암호가 일치하는 경우
     switch ($mode) {
         case 0:          // 수정 프로그램 호출
-			echo("<meta http-equiv='Refresh' content='0; url=dwmodify.php?id=$id&dname=$dname'>");
+			echo("<meta http-equiv='Refresh' content='0; url=./writeContent/dwmodify.php?id=$id&dname=$dname'>");
 			//echo("<meta http-equiv='Refresh' content='0; url=dconmodify.php?dname=$dname'>");
             break;
         case 1:
-			echo("<meta http-equiv='Refresh' content='0; url=dpmodify.php?id=$id&dname=$dname'>");
+			echo("<meta http-equiv='Refresh' content='0; url=./imageContent/dpmodify.php?id=$id&dname=$dname'>");
 			break;
 		case 2:
-			echo("<meta http-equiv='Refresh' content='0; url=drmodify.php?id=$id&dname=$dname'>");
+			echo("<meta http-equiv='Refresh' content='0; url=./routeContent/drmodify.php?id=$id&dname=$dname'>");
 			break;
 		case 3:         // 삭제 프로그램 호출
-			echo("<meta http-equiv='Refresh' content='0; url=dcondelete.php?id=$id&dname=$dname'>");
+			echo("<meta http-equiv='Refresh' content='0; url=./diaryCover/dcondelete.php?id=$id&dname=$dname'>");
             break;
     }   	   
 }  
