@@ -1,5 +1,5 @@
 <meta charset="UTF-8">
-<? include ("top.html"); ?>
+<? include ("../../../main/top.html"); ?>
 <table border='0' width='95%' align='center'>
 <tr height='70'></tr>
 <tr height='600'>
@@ -21,8 +21,8 @@ echo("
 	<html>
 		<head>
 		<title>Diary 사진 추가</title>
-		<link href='css/common.css' rel='stylesheet'>
-		<link href='css/rest.css' rel='stylesheet'>
+		<link href='../../../css/common.css' rel='stylesheet'>
+		<link href='../../../css/rest.css' rel='stylesheet'>
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js'></script> 
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js'></script> 
 		<link href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.css' rel='stylesheet'> 
@@ -78,7 +78,7 @@ echo("
 					<tr>
 						<th scope='row'><font size=4>Day</font>&nbsp;<input name='dday' id='dday' style='margin-top:-4px;'></th>
 						<td scope='row' class='datepick'>
-							<img src='images/calender-s.png'><input name='sdate' id='datepicker' readonly=readonly onfocus='this.blur()'>
+							<img src='../../../images/calender-s.png'><input name='sdate' id='datepicker' readonly=readonly onfocus='this.blur()'>
 						</td>
 					</tr>
 						<script type='text/javascript'>
@@ -148,4 +148,4 @@ echo("
 ?>
 </td></tr>
 </table>
-<? include ("bottom.html");?>
+<? include ("../../../main/bottom.html");?>

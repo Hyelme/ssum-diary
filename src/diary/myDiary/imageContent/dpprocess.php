@@ -33,7 +33,7 @@ if($userfile =="none") {
 } 
 
 if($userfile) {
-	$savedir = "./diarypt";
+	$savedir = "../../../diarypt";
 	$temp = $userfile_name;
 	copy($userfile,"$savedir/$temp");
 	unlink($userfile);
@@ -75,6 +75,6 @@ if(!$result2) {
 	");
 }
 
-echo("<meta http-equiv='Refresh' content='0; url=dmain.php?dname=$dname'>");
+echo("<meta http-equiv='Refresh' content='0; url=../dmain.php?dname=$dname'>");
 
 ?>

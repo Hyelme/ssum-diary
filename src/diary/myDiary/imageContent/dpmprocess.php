@@ -37,7 +37,7 @@ mysql_select_db("hyelmedb",$con);
 
 	$tmp = mysql_query("select userfile from diary where dname='$dname' and id='$id'",$con);
 	$fname = mysql_result($tmp, 0, "userfile");
-	$savedir = "./diarypt";
+	$savedir = "../../../diarypt";
 	unlink("$savedir/$fname");
 
 	$temp = $userfile_name;
@@ -71,7 +71,7 @@ if(!$result) {
 }
 
 
-echo("<meta http-equiv='Refresh' content='0; url=dmain.php?dname=$dname'>");
+echo("<meta http-equiv='Refresh' content='0; url=../dmain.php?dname=$dname'>");
 
 
 ?>
