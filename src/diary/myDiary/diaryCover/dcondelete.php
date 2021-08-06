@@ -14,7 +14,7 @@ $result = mysql_query("delete from diary where id='$id' and dname='$dname'",$con
 
 if($userfile) {
 	$temp = $userfile;
-	unlink("./file/$temp");
+	unlink("../../../file/$temp");
 }
 
 if(!$result) {
@@ -48,6 +48,6 @@ endwhile;
 mysql_close($con);
 
 // 글 삭제 결과를 보여주기 위한 글 목록 보기 프로그램 호출
-echo("<meta http-equiv='Refresh' content='0; url=dmain.php?dname=$dname'>");
+echo("<meta http-equiv='Refresh' content='0; url=../dmain.php?dname=$dname'>");
 
 ?>

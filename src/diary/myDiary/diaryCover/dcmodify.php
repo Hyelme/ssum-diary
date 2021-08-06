@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<? include ("top.html"); ?>
+<? include ("../../../main/top.html"); ?>
 <table border='0' width='95%' align='center'>
 <tr height='70'></tr>
 <tr height='600'>
@@ -12,7 +12,7 @@
 if (!isset($UserID)) {
 		echo ("<script>
 		window.alert('로그인 후 이용 가능한 서비스 입니다.')
-		location.href='login.html';
+		location.href='../../../userSettings/signIn/login.html';
 		</script>");
 		exit;
 	}
@@ -37,15 +37,15 @@ echo("
 <html>
 		<head>
 		<title>Diary Cover 등록</title>
-		<link href='css/common.css' rel='stylesheet'>
-		<link href='css/rest.css' rel='stylesheet'>
+		<link href='../../../css/common.css' rel='stylesheet'>
+		<link href='../../../css/rest.css' rel='stylesheet'>
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js'></script> 
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js'></script> 
 		<link href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.css' rel='stylesheet'> 
 		    
-		<link rel='stylesheet' type='text/css' href='css/spectrum.css'>
-		<link rel='stylesheet' type='text/css' href='ccs/docs.css'>
-		<script type='text/javascript' src='js/spectrum.js'></script>
+		<link rel='stylesheet' type='text/css' href='../../../css/spectrum.css'>
+		<link rel='stylesheet' type='text/css' href='../../../ccs/docs.css'>
+		<script type='text/javascript' src='../../../js/spectrum.js'></script>
 
 		<style>
 	
@@ -143,4 +143,4 @@ mysql_close($con);
 
 </td></tr>
 </table>
-<? include ("bottom.html"); ?>
+<? include ("../../../main/bottom.html"); ?>

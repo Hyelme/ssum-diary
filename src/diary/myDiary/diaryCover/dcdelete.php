@@ -14,7 +14,7 @@ $result = mysql_query("delete from diarycover where dname='$dname'",$con);
 
 if($coverfile) {
 	$temp = $coverfile;
-	unlink("./cover/$temp");
+	unlink("../../../cover/$temp");
 }
 
 $temp2 = mysql_query("select * from diary where dname='$dname'");
@@ -24,7 +24,7 @@ mysql_query("delete from diary where dname='$dname'",$con);
 
 if($userfile) {
 	$temp = $userfile;
-	unlink("./file/$temp");
+	unlink("../../../file/$temp");
 }
 
 if(!$result) {

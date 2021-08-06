@@ -1,5 +1,5 @@
 <meta charset='UTF-8'>
-<? include ("top.html"); ?>
+<? include ("../../../main/top.html"); ?>
 <table border='0' width='95%' align='center'>
 <tr height='70'></tr>
 <tr height='600'>
@@ -15,7 +15,7 @@ $total = mysql_num_rows($result);
 if (!isset($UserID)) {
 		echo ("<script>
 		window.alert('로그인 후 이용 가능한 서비스 입니다.')
-		location.href='login.html';
+		location.href='../../../userSettings/signIn/login.html';
 		</script>");
 		exit;
 	}
@@ -24,7 +24,7 @@ echo("
 	<html lang='ko'>
 	 <head>
 	 <title>Diary-main-show 예제</title>
-	 <link href='css/Diary.css' rel='stylesheet'>
+	 <link href='../../../css/Diary.css' rel='stylesheet'>
 	 </head>
 	 <body>
 		<div class='Dmain'>
@@ -53,11 +53,11 @@ echo("
 				$tdate2 = $array2[0] . "." . $array2[1] . "." . $array2[2];
 				$covercolor = mysql_result($result, $counter, "covercolor");
 
-				echo("<a href='dmain.php?dname=$dname'>
+				echo("<a href='../myDiary/dmain.php?dname=$dname'>
 						<div class='Diary_cover' align='center' style='background-color:");
 				echo $covercolor;
 				echo("'>  
-					<img src='cover/$coverfile'><br>
+					<img src='../../../cover/$coverfile'><br>
 					<div class='Diary_cover_right' style='background-color:");
 				echo $covercolor;
 				echo("'>
@@ -97,4 +97,4 @@ mysql_close($con);
 ?>
 </td></tr>
 </table>
-<? include ("bottom.html");?>
+<? include ("../../../main/bottom.html");?>

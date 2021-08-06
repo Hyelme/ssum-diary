@@ -71,7 +71,7 @@ if(!$coverfile) {
 	");
 	exit;
 }else {
-	$savedir = "./cover";
+	$savedir = "../../../cover";
 	$temp = $coverfile_name;
 	if (file_exists("$savedir/$temp")) {
 		echo("

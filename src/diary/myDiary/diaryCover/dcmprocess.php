@@ -77,7 +77,7 @@ if(!$coverfile) {
 } else {
 	$tmp = mysql_query("select coverfile from diarycover where dname='$dname'",$con);
 	$fname = mysql_result($tmp, 0, "coverfile");
-	$savedir = "./cover";
+	$savedir = "../../../cover";
 	unlink("$savedir/$fname");
 
 	$temp = $coverfile_name;
