@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<? include ('top.html'); ?>
+<? include ('../main/top.html'); ?>
 <table border='0' width='95%' align='center'>
 <tr height='70'></tr>
 <tr height='600'>
@@ -20,8 +20,8 @@ $total = mysql_num_rows($result);
 echo("
 <HTML html>
 <head>
-<link href='css/common.css' rel='stylesheet'>
-<link href='css/rest.css' rel='stylesheet'>
+<link href='../css/common.css' rel='stylesheet'>
+<link href='../css/rest.css' rel='stylesheet'>
 <title>맛집 공유 게시판</title>
 </head>
 <body>
@@ -154,4 +154,4 @@ echo("
 
 </td></tr>
 </table>
-<? include ("bottom.html"); ?>
+<? include ("../main/bottom.html"); ?>

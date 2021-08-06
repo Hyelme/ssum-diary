@@ -16,7 +16,7 @@ $result = mysql_query("delete from famous_rest where id=$id",$con);
 
 if($filename) {
 	$temp = $filename;
-	unlink("./file/$temp");
+	unlink("../file/$temp");
 }
 
 if(!$result) {
