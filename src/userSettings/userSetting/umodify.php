@@ -1,5 +1,5 @@
 ﻿<meta charset="UTF-8">
-<?PHP include ("top.html"); ?>
+<?PHP include ("../../main/top.html"); ?>
 <table border='0' width='95%' align='center'>
 <tr height='70'></tr>
 <tr height='600'>
@@ -23,8 +23,8 @@ $mphone = mysql_result($result, 0, "mphone");
 echo ("<HTML html>
 		<head>
 		<script src='https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js'></script>
-		<link href='css/common.css' rel='stylesheet'>
-		<link href='css/rest.css' rel='stylesheet'>
+		<link href='../../css/common.css' rel='stylesheet'>
+		<link href='../../css/rest.css' rel='stylesheet'>
 		<script language='Javascript'>
 			function sample6_execDaumPostcode() {
 			new daum.Postcode({
@@ -169,4 +169,4 @@ echo ("<HTML html>
 
 </td></tr>
 </table>
-<?PHP include ("bottom.html");   ?>
+<?PHP include ("../../main/bottom.html");   ?>

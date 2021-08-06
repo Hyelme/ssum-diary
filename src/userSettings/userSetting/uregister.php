@@ -54,6 +54,6 @@ if ($result) {
 	
 mysql_close($con);
 	
-echo ("<meta http-equiv='Refresh'  content='0; url=logout.php'>");
+echo ("<meta http-equiv='Refresh'  content='0; url../signIn/logout.php'>");
 	
 ?>
