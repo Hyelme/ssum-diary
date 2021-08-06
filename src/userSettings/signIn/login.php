@@ -44,7 +44,7 @@ if (!$total){
 				
 		// mysql_query("delete from diary where dname='$dname'", $con);
 			 
-		echo ("<meta http-equiv='Refresh' content='0; url=Fmain.html'>"); 
+		echo ("<meta http-equiv='Refresh' content='0; url=../../main/Fmain.html'>"); 
 	}
 }
 mysql_close($con);

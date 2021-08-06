@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>여행을 담다, 쑴 일기 아이디/비밀번호 찾기</title>
-	<link href="css/Mystyle.css" rel="stylesheet">
+	<link href="../../css/Mystyle.css" rel="stylesheet">
   </head>
   <body>
 	<div id="logopage">
-		<a href = Fmain.html>
-			<img alt='logo' src='images/ssum_logo2.png'>
+		<a href = "../../main/Fmain.html">
+			<img alt='logo' src='../../images/ssum_logo2.png'>
 		</a>
 	</div>
 	<div id="findidpwForm">

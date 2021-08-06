@@ -15,6 +15,6 @@ ob_start() ;
 
 // SetCookie("Session", "", time());
 	 
-echo ("<meta http-equiv='Refresh' content='0; url=Fmain.html'>");
+echo ("<meta http-equiv='Refresh' content='0; url=../../main/Fmain.html'>");
 
 ?>
