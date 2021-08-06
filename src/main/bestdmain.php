@@ -76,7 +76,7 @@ echo("
 				if($content) {
 						echo("<td style='word-break:break-all;'>$content</td>");
 					} elseif($userfile) {
-						echo("<td><img src='./diarypt/$userfile' width='300px' border=0></td>");
+						echo("<td><img src='../diarypt/$userfile' width='300px' border=0></td>");
 					}else {
 						echo("<td style='word-break:break-all;'>$route</td>");
 					} 
