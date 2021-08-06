@@ -18,8 +18,8 @@ echo("
 <HTML html>
 <head>
 <title>공지사항 입력 폼</title>
-  <link href='css/common.css' rel='stylesheet'>
-  <link href='css/rest.css' rel='stylesheet'>
+  <link href='../css/common.css' rel='stylesheet'>
+  <link href='../css/rest.css' rel='stylesheet'>
  </head>
  <body>
  <div class='content_tit_area clfix first_child no_line'>
@@ -75,4 +75,4 @@ echo("
 
 </td></tr>
 </table>
-<? include ("bottom.html"); ?>
+<? include ("../main/bottom.html"); ?>

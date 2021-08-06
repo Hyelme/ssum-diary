@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<? include ("top.html"); ?>
+<? include ("../main/top.html"); ?>
 <table border='0' width='95%' align='center'>
 <tr height='70'></tr>
 <tr height='600'>
@@ -30,8 +30,8 @@ $content = nl2br($content);
 echo("
 	<HTML html>
 		<head>
-		<link href='css/common.css' rel='stylesheet'>
-		<link href='css/rest.css' rel='stylesheet'>
+		<link href='../css/common.css' rel='stylesheet'>
+		<link href='../css/rest.css' rel='stylesheet'>
 		</head>
 		<body>
 		<div class='content_area' id='skip_pass'>
@@ -81,4 +81,4 @@ echo("
 ?>
 </td></tr>
 </table>
-<? include ("bottom.html"); ?>
+<? include ("../main/bottom.html"); ?>
