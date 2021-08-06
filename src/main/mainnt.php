@@ -11,8 +11,8 @@ $total = mysql_num_rows($result);
 echo("
 <HTML html>
 <head>
-<link href='css/common.css' rel='stylesheet'>
-<link href='css/rest.css' rel='stylesheet'>
+<link href='../css/common.css' rel='stylesheet'>
+<link href='../css/rest.css' rel='stylesheet'>
 </head>
 <body>
 
@@ -71,7 +71,7 @@ echo("
 
 					echo("
 						<tr>
-							<th class='title' scope='col'>$t<a href=ntcontent.php?board=notice&id=$id target='_top'>$topic</a></td>
+							<th class='title' scope='col'>$t<a href=../notice/ntcontent.php?board=notice&id=$id target='_top'>$topic</a></td>
 							<th class='writer' scope='col'>$writer</td>
 							<th align=center scope='col'>$wdate</td>
 						</tr>

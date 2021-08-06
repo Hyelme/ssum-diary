@@ -11,7 +11,7 @@ echo("
 	<html lang='ko'>
 	 <head>
 	 <title>Best Diary</title>
-	 <link href='css/bestDiary.css' rel='stylesheet'>
+	 <link href='../css/bestDiary.css' rel='stylesheet'>
 	 </head>
 	 <body>
 		<div class='Dmain'>
@@ -41,7 +41,7 @@ echo("
 						<div class='Diary_cover' align='center' style='background-color:");
 				echo $covercolor;
 				echo("'>  
-					<img src='cover/$coverfile'><br>
+					<img src='../cover/$coverfile'><br>
 					<div class='Diary_cover_right' style='background-color:");
 				echo $covercolor;
 				echo("'>

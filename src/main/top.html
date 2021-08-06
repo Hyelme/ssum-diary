@@ -18,18 +18,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="Fmain.html"><img src="images/ssum_logo2.png" height="30em"></a>
+          <a class="navbar-brand" href="Fmain.html"><img src="../images/ssum_logo2.png" height="30em"></a>
         </div>
         
          <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="dcmain.php">My Diary</a></li>            
+            <li class="active"><a href="../diary/myDiary/diaryCover/dcmain.php">My Diary</a></li>            
             
             <li class="dropdown">
               <a href="#notice" class="dropdown-toggle" data-toggle="dropdown">Community<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                    <li><a href="ntshow.php">공지사항</a></li>
-                    <li><a href="fbshow.php">자유게시판</a></li>
+                    <li><a href="../notice/ntshow.php">공지사항</a></li>
+                    <li><a href="../freeBoard/fbshow.php">자유게시판</a></li>
                 </ul>
             </li>
             
@@ -37,23 +37,23 @@
 			<li class="dropdown">
               <a href="#notice" class="dropdown-toggle" data-toggle="dropdown">Share Information<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                    <li><a href="plshow.php">여행지</a></li>
-                    <li><a href="svshow.php">기념품</a></li>
-					<li><a href="frshow.php">맛집</a></li>
+                    <li><a href="../place/plshow.php">여행지</a></li>
+                    <li><a href="../souvenir/svshow.php">기념품</a></li>
+					<li><a href="../famousRestaurant/frshow.php">맛집</a></li>
 			  </ul>
             </li>
 
 
-            <li><a href="allDcmain.php">Diary Share</a></li>
+            <li><a href="../diary/shareDiary/allDcmain.php">Diary Share</a></li>
 
 			<?PHP 
 				if ($UserID != "admin" && $UserID) {
 			?>
-				<li><a href="mypage.php">MY Page</a></li>
+				<li><a href="../userSettings/userSetting/mypage.php">MY Page</a></li>
 			<?PHP
 				} elseif($UserID == "admin") {  
 			?>
-				<li><a href="admin.php">관리메뉴</a></li>
+				<li><a href="../userSettings/admin/admin.php">관리메뉴</a></li>
 			<?PHP
 				} else {
 				}
@@ -61,10 +61,10 @@
           </ul>
 		  	<?PHP
 				if(!$UserID) { ?>
-				<div id="singUpbtn"><a href = join.html><font color="white"><b>회원가입</b></font></a></div>	
-				<div id="loginbtn"><a href = login.html><font color="white"><b>로그인</b></font></a></div>
+				<div id="singUpbtn"><a href = ../userSettings/signUp/join.html><font color="white"><b>회원가입</b></font></a></div>	
+				<div id="loginbtn"><a href = ../userSettings/signIn/login.html><font color="white"><b>로그인</b></font></a></div>
 			<?PHP } else { ?>
-				<div id="logoutbtn"><a href = logout.php><font color="white"><b>로그아웃</b></a></font></div>
+				<div id="logoutbtn"><a href = ../userSettings/signIn/logout.php><font color="white"><b>로그아웃</b></a></font></div>
 				<div id="userInfo"><font color="white"><b><? echo $UserName; ?>님 반갑습니다</b></font></div>
 			<?PHP } ?>
         </div>

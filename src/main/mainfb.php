@@ -14,8 +14,8 @@ $total = mysql_num_rows($result);
 echo("
 <HTML html>
 <head>
-<link href='css/common.css' rel='stylesheet'>
-<link href='css/rest.css' rel='stylesheet'>
+<link href='../css/common.css' rel='stylesheet'>
+<link href='../css/rest.css' rel='stylesheet'>
 </head>
 <body>
  <div class='wrap_tbl tb_info'>
@@ -73,7 +73,7 @@ echo("
 
 					echo("
 						<tr>
-							<th class='title' scope='col'>$t<a href=fbcontent.php?board=testboard&id=$id target='_top'>$topic</a></th>
+							<th class='title' scope='col'>$t<a href=../freeBoard/fbcontent.php?board=testboard&id=$id target='_top'>$topic</a></th>
 							<th class='writer' scope='col'>$writer</th>
 							<th align=center scope='col'>$wdate</th>
 						</tr>

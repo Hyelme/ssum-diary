@@ -25,10 +25,10 @@ mysql_query("update diarycover set hit=$hit where dname='$dname' and tdate1='$td
 echo("
 <HTML html>
 <head>
-<link href='css/common.css' rel='stylesheet'>
-<link href='css/rest.css' rel='stylesheet'>
-<link href='css/Diary.css' rel='stylesheet'>
-<script src='js/hiddenBtn.js'></script>
+<link href='../css/common.css' rel='stylesheet'>
+<link href='../css/rest.css' rel='stylesheet'>
+<link href='../css/Diary.css' rel='stylesheet'>
+<script src='../js/hiddenBtn.js'></script>
 </head>
 <body>
 	<div class='content_tit_area clfix first_child no_line'>
