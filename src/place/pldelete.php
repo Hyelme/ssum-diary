@@ -16,7 +16,7 @@ $result = mysql_query("delete from place where id=$id",$con);
 
 if($filename) {
 	$temp = $filename;
-	unlink("./file/$temp");
+	unlink("../file/$temp");
 }
 
 if(!$result) {

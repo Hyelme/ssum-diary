@@ -49,7 +49,7 @@ if (!$total){
 $wdate = date("Y-m-d");	//   글 쓴 날짜 저장
 
 if($userfile) {
-	$savedir = "./file";
+	$savedir = "../file";
 	$temp = $userfile_name;
 	copy($userfile,"$savedir/$temp");
 	unlink($userfile);
