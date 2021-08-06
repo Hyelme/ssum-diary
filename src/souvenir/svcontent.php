@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<? include ("top.html"); ?>
+<? include ("../main/top.html"); ?>
 <table border='0' width='95%' align='center'>
 <tr height='70'></tr>
 <tr height='600'>
@@ -39,8 +39,8 @@ if($filesize > 1000) {
 echo("
 	<HTML html>
 		<head>
-		<link href='css/common.css' rel='stylesheet'>
-		<link href='css/rest.css' rel='stylesheet'>
+		<link href='../css/common.css' rel='stylesheet'>
+		<link href='../css/rest.css' rel='stylesheet'>
 		<title>기념품 공유 게시판</title>
 		</head>
 		<body>
@@ -68,7 +68,7 @@ if($filename) {
 				</div>
 					<div class='view_info'>
 						<span class='view_info_txt content_info'>첨부파일  </span>
-						<span><a href='./file/$filename'>$filename</a>  [$disp_size]</span>
+						<span><a href='../file/$filename'>$filename</a>  [$disp_size]</span>
 					</div>
 ");
 } else {
@@ -89,7 +89,7 @@ echo("
 
 	if(!$filename) {
 	}else{
-		echo("<img src='./file/$filename' width='300' border=0><br><br>"); 
+		echo("<img src='../file/$filename' width='300' border=0><br><br>"); 
 	}
 
 echo("					
@@ -127,6 +127,6 @@ echo("
 ?>
 </td></tr>
 </table>
-<? include ("bottom.html");
+<? include ("../main/bottom.html");
 
  ?>

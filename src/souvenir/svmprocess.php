@@ -46,7 +46,7 @@ if(!$userfile) {
 } else {
 	$tmp = mysql_query("select filename from souvenir where id=$id",$con);
 	$fname = mysql_result($tmp, 0, "filename");
-	$savedir = "./file";
+	$savedir = "../file";
 	unlink("$savedir/$fname");
 
 	$temp = $userfile_name;
