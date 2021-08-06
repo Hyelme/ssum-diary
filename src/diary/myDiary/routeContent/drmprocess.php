@@ -55,6 +55,6 @@ if(!$result) {
 
 
 
-echo("<meta http-equiv='Refresh' content='0; url=dmain.php?dname=$dname'>");
+echo("<meta http-equiv='Refresh' content='0; url=../dmain.php?dname=$dname'>");
 
 ?>

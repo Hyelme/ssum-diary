@@ -35,20 +35,6 @@ if(!$dday) {
 $con = mysql_connect("localhost","hyelme","pw4hyelme");
 mysql_select_db("hyelmedb",$con);
 
-/*
-$arr = explode(' ',$route);
-if($arr.length == 1) {
-	$route = $arr;
-} else if($arr.length > 1) {
-	for($i = 0; $i < $arr.length; $i++) {
-		if($i == 0) {
-			$route = $arr[$i];
-		}else{
-			$route = $route . " → " . $arr[$i];
-		}
-	}
-}
-*/
 $result1 = mysql_query("select * from diarycover where writer='$UserName' and dname='$dname'", $con);
 $dname = mysql_result($result1, 0, "dname");
 
@@ -81,6 +67,6 @@ if(!$result2) {
 	");
 }
 
-echo("<meta http-equiv='Refresh' content='0; url=dmain.php?dname=$dname'>");
+echo("<meta http-equiv='Refresh' content='0; url=../dmain.php?dname=$dname'>");
 
 ?>
