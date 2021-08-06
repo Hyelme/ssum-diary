@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<? include ('top.html'); ?>
+<? include ('../main/top.html'); ?>
 <table border='0' width='95%' align='center'>
 <tr height='70'></tr>
 <tr height='600'>
@@ -9,9 +9,6 @@
 
 $con =   mysql_connect("localhost","hyelme","pw4hyelme");
 mysql_select_db("hyelmedb",$con);
-/*mysql_query("set session character_set_connection=utf8;"); 
-mysql_query("set session character_set_results=utf8;");
-mysql_query("set session character_set_client=utf8;"); */
 
 $result = mysql_query("select * from testboard order by id desc", $con);
 $total = mysql_num_rows($result);
@@ -19,8 +16,8 @@ $total = mysql_num_rows($result);
 echo("
 <HTML html>
 <head>
-<link href='css/common.css' rel='stylesheet'>
-<link href='css/rest.css' rel='stylesheet'>
+<link href='../css/common.css' rel='stylesheet'>
+<link href='../css/rest.css' rel='stylesheet'>
 </head>
 <body>
  <div class='content_tit_area clfix first_child no_line'>
@@ -152,4 +149,4 @@ echo("
 
 </td></tr>
 </table>
-<? include ("bottom.html"); ?>
+<? include ("../main/bottom.html"); ?>

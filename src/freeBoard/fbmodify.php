@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<? include ("top.html"); ?>
+<? include ("../main/top.html"); ?>
 <table border='0' width='95%' align='center'>
 <tr height='70'></tr>
 <tr height='600'>
@@ -12,7 +12,7 @@
 if (!isset($UserID)) {
 		echo ("<script>
 		window.alert('로그인 후 이용 가능한 서비스 입니다.')
-		location.href='login.html';
+		location.href='../userSettings/signIn/login.html';
 		</script>");
 		exit;
 	}
@@ -33,8 +33,8 @@ echo("
 <HTML html>
 <head>
 <title>게시판 수정 폼</title>
-  <link href='css/common.css' rel='stylesheet'>
-  <link href='css/rest.css' rel='stylesheet'>
+  <link href='../css/common.css' rel='stylesheet'>
+  <link href='../css/rest.css' rel='stylesheet'>
  </head>
  <body>
  <div class='content_tit_area clfix first_child no_line'>
@@ -95,4 +95,4 @@ mysql_close($con);
 
 </td></tr>
 </table>
-<? include ("bottom.html"); ?>
+<? include ("../main/bottom.html"); ?>
